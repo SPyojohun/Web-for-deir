@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FOR U Na krub</title>
+        <link rel="icon" href="heart.png" type="icon">
+        <style>
+            body {
+                font-family: sans-serif;
+                background-color: #ffd2ec;
+            }
+            .main_button {
+                background-color: rgb(216, 98, 137);
+                border-radius: 50px;
+                padding: 10px;
+                width: 350px;
+                margin-top: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center>
+        <div class="main_button" >
+            <h1 class="mb_text" style="color: #ffffff; font-weight: 600; font-size: 24px; letter-spacing: 0.05px; text-align: center;">
+                For U คับกดเปิดเลยย♥
+            </h1>
+        </div>
+        </center>
+    </body>
+    <script>
+            const clicksound = new Audio('cuteClick.mp3')
+            document.querySelector('.main_button').addEventListener('click', function(){
+                clicksound.currentTime = 0;
+                clicksound.play();
+
+                setTimeout(function()  {
+                    window.location.href= 'message.html';
+                }, 250);
+                
+            });
+            
+            const btn = document.querySelector('.main_button');
+
+            btn.addEventListener('touchstart', () => {
+                btn.style.transform = 'scale(0.95)';
+                btn.style.backgroundColor = 'rgb(209,110,143)';
+            });
+            
+            btn.addEventListener('touchend', () => {
+                btn.style.transform = 'scale(1)';
+                btn.style.backgroundColor = 'rgb(216,98,137)';
+            });
+        </script>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4U</title>
+        <link rel="icon" href="heart.png" type="icon">
+        <style>
+            body {
+                font-family: sans-serif;
+                background-color: #ffd2ec;
+            }
+            .back4test{
+                background-color: rgb(216, 98, 137);
+                border-radius: 200px;
+                padding: 12px;
+                width: 10px;
+                margin-top: auto;
+                margin-right: auto;
+            }
+            .final{
+                background-color: rgb(216, 98, 137);
+                border-radius: 200px;
+                padding: 10px;
+                width: 250px;
+                margin-top: 25px;
+                margin-right: auto;
+            }
+            .form{
+                background-color: rgb(216, 98, 137);
+                border-radius: 200px;
+                padding: 10px;
+                width: 250px;
+                margin-top: 25px;
+                margin-right: auto;
+            }
+            .bg{
+                background-color: rgb(216, 98, 137);
+                border-radius: 50px;
+                padding: 87px;
+                width: 200px;
+                height: 385px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="back4test">
+                <p style="text-align: center; font-size: medium; font-weight: 600; color: white;"><</p>
+        </div>
+        <center>
+            <div class="bg">
+                <h3 style="color: white; font-weight: 600;">Happy New Year 2026 สวัสดีใหม่นะคับเทอ ปีนี้ก็อยู่หยอดมุกจีบกันไปนานๆนะ(หยอก) ปีนี้ก็ปีสุดท้าย ของม.3แล้วทำอะไรขอให้สมหวังสอบติดเตรียมอุดม แล้วก็อย่าลืมนอนให้ครบ 8 แก้ว กินข้าวให้ครบ 8 ชั่วโมง กับ กินน้ำให้ครบ 3 มื้อด้วย By อาหวังสุดหล่อเทห์</h3>
+            </div>
+        </center>
+         <div class="final">
+                <p style="text-align: center; font-size: medium; font-weight: 600; color: white;">ดูความพยายามของอาหวังคนนี้</p>
+        </div>
+        <div class="form">
+                <p style="text-align: center; font-size: medium; font-weight: 600; color: white;">ให้คะแนน</p>
+        </div>
+    </body>
+    <script>
+        const btn = document.querySelector('.back4test');
+        const last = document.querySelector('.final');
+        const form = document.querySelector('.form')
+        const clicksound = new Audio('cuteClick.mp3')
+        document.querySelector('.back4test').addEventListener('click', function(){
+            clicksound.currentTime = 0;
+            clicksound.play();
+
+            setTimeout(function(){
+                window.location.href = 'index.html';
+            }, 300);
+        })
+
+        document.querySelector('.final').addEventListener('click', function(){
+            clicksound.currentTime = 0;
+            clicksound.play();
+
+            setTimeout(function(){
+                window.location.href = 'final.html'
+            }, 300)
+        })
+
+        document.querySelector('.form').addEventListener('click', function() {
+            clicksound.currentTime = 0;
+            clicksound.play();
+
+            setTimeout(function() {
+                window.location.href = "https://forms.gle/BkBL4E2dzy1KRdcm6"
+            }, 300)
+        })
+        
+
+        btn.addEventListener('touchstart', () => {
+            btn.style.transform = 'scale(0.95)';
+            btn.style.backgroundColor = 'rgb(209,110,143)';
+        });
+            
+        btn.addEventListener('touchend', () => {
+            btn.style.transform = 'scale(1)';
+            btn.style.backgroundColor = 'rgb(216,98,137)';
+        });
+
+        last.addEventListener('touchstart', () => {
+            last.style.transform = 'scale(0.95)';
+            last.style.backgroundColor = 'rgb(209,110,143)';
+        });
+            
+        last.addEventListener('touchend', () => {
+            last.style.transform = 'scale(1)';
+            last.style.backgroundColor = 'rgb(216,98,137)';
+        });
+        form.addEventListener('touchstart', () => {
+            form.style.transform = 'scale(0.95)';
+            form.style.backgroundColor = 'rgb(209,110,143)';
+        });
+            
+        form.addEventListener('touchend', () => {
+            form.style.transform = 'scale(1)';
+            form.style.backgroundColor = 'rgb(216,98,137)';
+        });
+    </script>
+</html>
+
